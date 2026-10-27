@@ -31,8 +31,8 @@ function scr_init_vetores(){
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
 	nums[i++] = 30 //dano
-	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
-	strings[j++] = "oq ela faz";
+	strings[j++] = "\0"; //atack ou passiva 2
+	strings[j++] = "\0";
 	nums[i++] = 0; //custo
 	nums[i++] = 30 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
@@ -71,7 +71,7 @@ function scr_init_vetores(){
 	strings[j++] = "\0";
 	nums[i++] = 0; //custo
 	nums[i++] = 30 //dano
-	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
+	strings[j++] = "Tipo da Fraqueza dele"; //tipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
 	
@@ -152,6 +152,24 @@ function scr_init_vetores(){
 	strings[j++] = "Comum"; // raridade da carta
 	strings[j++] = "ELETRICITY ENERGY"; // nome
 	strings[j++] = "ENERGY"; // tipo
+	nums[i++] = 0; //hp
+	strings[j++] = ""; //atack ou passiva 1
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //atack ou passiva 2
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //tiipo da fraqueza
+	strings[j++] = ""; // resistencia
+	nums[i++] = 0; //custo pra trocar
+	
+	// Item de cura
+	nums[i++] = ++z; //numero da carta 10
+	strings[j++] = "Comum"; // raridade da carta
+	strings[j++] = "Poção de vida"; // nome
+	strings[j++] = "ITEM HEALING"; // tipo
 	nums[i++] = 0; //hp
 	strings[j++] = ""; //atack ou passiva 1
 	strings[j++] = "";

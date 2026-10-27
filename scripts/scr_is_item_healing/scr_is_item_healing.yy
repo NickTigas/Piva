@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_is_item_healing",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_is_item_healing",
+  "parent":{
+    "name":"Is",
+    "path":"folders/Scripts/Is.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

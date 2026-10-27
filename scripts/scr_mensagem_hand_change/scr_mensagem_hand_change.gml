@@ -6,15 +6,15 @@ function scr_mensagem_hand_change(){
 	
 	buffer_seek(obj_client.send_buffer, buffer_seek_start, 0); // começa no inicio do buffer
 	buffer_write(obj_client.send_buffer, buffer_u8, MENSAGEM_HAND_CHANGE); // dps escreve o id de mensagem (hand change)
-	buffer_write(obj_client.send_buffer, buffer_u8, handCount);
-	buffer_write(obj_client.send_buffer, buffer_u8, deckCount);
+	buffer_write(obj_client.send_buffer, buffer_u8, obj_player.handCount);
+	buffer_write(obj_client.send_buffer, buffer_u8, obj_player.deckCount);
 	/* buffer_u8 = eh um inteiro sem sinal de 8 bits, tem valor positivo entre 0 à 255, menor entre os buffers, por isso
 	que estamos usando, alem de econimizar processamento os valores de hand change, handCount e deckCount nunca vão 
 	passar de 255 */
 	var i;
-	for(i = 0; i < handCount; i++){
+	for(i = 0; i < obj_player.handCount; i++){
 		// escreve todos os numeros das cartas e a mão do jogador no buffer
-		buffer_write(obj_client.send_buffer, buffer_u32, hand[i]);// manda esse buffer pro server socket, buffer e tamanho do buffer
+		buffer_write(obj_client.send_buffer, buffer_u32, obj_player.hand[i]);// manda esse buffer pro server socket, buffer e tamanho do buffer
 		// buffer_u32 = eh um inteiro sem sinal de 32 bits, tem valor positivo entre 0 à 4.29M  
 		
 	}

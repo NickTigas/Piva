@@ -13,6 +13,9 @@ function src_deck1_init(){
 	deck[i++] = 9;
 	deck[i++] = 9;
 	deck[i++] = 9;
+	deck[i++] = 10;
+	deck[i++] = 10;
+	deck[i++] = 10;
 	// teste
 	
 	deckCount =i;
