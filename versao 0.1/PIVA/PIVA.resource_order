@@ -1,0 +1,19 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Objects","order":2,"path":"folders/Objects.yy",},
+    {"name":"Scripts","order":3,"path":"folders/Scripts.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Patch","order":4,"path":"fonts/Patch/Patch.yy",},
+    {"name":"obj_hand","order":1,"path":"objects/obj_hand/obj_hand.yy",},
+    {"name":"scr_embaralhar_deck","order":1,"path":"scripts/scr_embaralhar_deck/scr_embaralhar_deck.yy",},
+    {"name":"src_draw","order":2,"path":"scripts/src_draw/src_draw.yy",},
+    {"name":"spr_deck","order":6,"path":"sprites/spr_deck/spr_deck.yy",},
+    {"name":"spr_unicard_back","order":1,"path":"sprites/spr_unicard_back/spr_unicard_back.yy",},
+    {"name":"spr_unicard_common","order":2,"path":"sprites/spr_unicard_common/spr_unicard_common.yy",},
+    {"name":"spr_unicard_epic","order":4,"path":"sprites/spr_unicard_epic/spr_unicard_epic.yy",},
+    {"name":"spr_unicard_legendary","order":5,"path":"sprites/spr_unicard_legendary/spr_unicard_legendary.yy",},
+    {"name":"spr_unicard_rare","order":3,"path":"sprites/spr_unicard_rare/spr_unicard_rare.yy",},
+  ],
+}
