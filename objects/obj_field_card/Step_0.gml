@@ -1,3 +1,45 @@
+if(d_counters < 0){
+	d_counters = 0;
+}
+
+//273 406 x
+//405 /443 y
+// pega o num da direita, divide pela largura da sala e pega o numero
+//ataque 1
+move_select_x[0] = 0.4020618556701031*room_width - pilha_count*20/2; //273x_esq / 679 width da room1
+move_select_y[0] = 0.4602272727272727*room_height + pilha_count*20/2; //405y_cima / 880 height da room1
+move_select_x[1] = 0.5979381443298969*room_width - pilha_count*20/2; //406x_dir / 679 width da room1
+move_select_y[1] = 0.5034090909090909*room_height + pilha_count*20/2; //443y_baixo / 880 height da room1
+//ataque 2
+//273 406 x
+//462 /500 y
+move_select_x[2] = 0.4020618556701031*room_width - pilha_count*20/2; //273x_esq / 679 width da room1
+move_select_y[2] = 0.525*room_height + pilha_count*20/2; //462y_cima / 880 height da room1
+move_select_x[3] = 0.5979381443298969*room_width - pilha_count*20/2; //406x_dir / 679 width da room1
+move_select_y[3] = 0.625*room_height + pilha_count*20/2; //500_baixo / 880 height da room1
+
+var i,
+cardNum;
+cardNum = self.cardNum;
+health_points = scr_get_hp(cardNum);
+
+if(scr_is_academico(cardNum) && health_points <= d_counters){
+	if(player.field[posicao] != 0){
+		for(i=pilha_count-1; i>=0; i--){
+			scr_dp_field_card(i);
+		}
+	}
+	
+	scr_mensagem_field_set(posicao,0);
+	player.field[posicao] = 0;
+	player.fieldCard[posicao] = 0;
+	if(alarm[0] == -1){
+		alarm[0] = 3;
+	}
+	depth = -400;
+	
+}
+
 token_count = 0;
 
 var i;
@@ -8,8 +50,26 @@ for(i = 0;i < pilha_count; i++){//braco robotico
 
 }
 if(mouse_check_button_released(mb_left)){
+	/*
 	if( temp > -1){
 	pilha[temp-1] =4;
+	} bug visual da carta de energia */
+	if(posicao == 0 && selected){
+		if(strings[(cardNum-1)*9+5] != "\0"){// se o academico tiver 2 ataques
+			if(mouse_x > move_select_x[0] && mouse_x < move_select_x[1] && mouse_y > move_select_y[0] && mouse_y < move_select_y[1]){
+				move_select = 1;
+				damage = scr_get_damage(cardNum, move_select)/10;
+				scr_mensagem_manda_damage(damage, 0);
+			}
+			else if(mouse_x > move_select_x[2] && mouse_x < move_select_x[3] && mouse_y > move_select_y[2] && mouse_y < move_select_y[3]){
+				move_select = 2;
+				damage = scr_get_damage(cardNum, move_select)/10;
+				scr_mensagem_manda_damage(damage, 0);
+			}
+		}
+		else{
+			
+		}
 	}
 	selected = false;
 }

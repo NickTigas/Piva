@@ -1,0 +1,6 @@
+Patch Notes 6.0 / 1.6
+
+- Foi implementado menu
+- Foi implementado a função de criação de deck interativa
+- Foi implementado PVN (Player VS Ninguem)
+- Foi arrumado o bug do desaparecimento de textura às cartas equipadas

@@ -15,3 +15,6 @@ for(i=0; i<60; i++){
 pilha_count = 0;
 
 temp = -1;
+
+cardNum = 0;
+health_points = 0;

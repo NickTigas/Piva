@@ -1,9 +1,9 @@
-/*for(i = pilha_count; i > 0;i--){
-	if(pilha[i-1] > 0){
+for(i = pilha_count; i > 0;i--){
+	if(scr_is_academico(pilha[i-1]) && alarm[0] == -1){
 		draw_sprite(sprite_vetor[pilha[i-1]], -1, x+5*i, y+5*i);
 	}
 
-}*/
+}
 
 draw_self();
 
@@ -15,7 +15,7 @@ if(selected == true){
 for(i=0;i< d_counters; i++){
 	if(i < 10){
 		draw_sprite(spr_dcounter,-1,x-card_width/2+2+8*i,y-card_height/2-4);
-		draw_set_color(c_blue);
+		draw_set_color(c_black);
 		draw_text(x,y,string(d_counters*10));
 	}
 	else{
@@ -23,7 +23,7 @@ for(i=0;i< d_counters; i++){
 	}
 }
 
-for( i=0; i<60;i++){
+for( i=0; i<20;i++){
 	if(tokens[i] > 0){
 		if(tokens[i] == 6){
 			sprite = spr_item_academico_token;
@@ -57,7 +57,7 @@ if(selected == true){
 		var rot = 0;
 
 		if (tipo == "ITEM") {
-		    rot = 270;
+			    rot = 270;
 		}
 		
 		draw_sprite_ext(big_sprite_vetor[pilha[i-1]], -1, room_width/2-pilha_count+20/2+20*(i), room_height/2+pilha_count*20/2-20*(i),1,1,rot,c_white,1);
@@ -65,13 +65,37 @@ if(selected == true){
 	}
 	draw_sprite(big_sprite_vetor[cardNum], -1, room_width/2-pilha_count*20/2, room_height/2+pilha_count*20/2);
 	scr_pilha_select();
+	
+	// ATAQUES WOW (mt poggers)
+	if(strings[(cardNum-1)*9+5] != "\0"){// se o academico tiver 2 ataques
+		// mostra o 1 ataque no retangulo
+		draw_set_colour(c_black);
+		if(mouse_x > move_select_x[0] && mouse_x < move_select_x[1] && mouse_y > move_select_y[0] && mouse_y < move_select_y[1]){
+			draw_rectangle(move_select_x[0], move_select_y[0], move_select_x[1], move_select_y[1], true);
+		}
+		else if(mouse_x > move_select_x[2] && mouse_x < move_select_x[3] && mouse_y > move_select_y[2] && mouse_y < move_select_y[3]){
+			// mostra o 2 ataque no retangulo
+			draw_rectangle(move_select_x[2], move_select_y[2], move_select_x[3], move_select_y[3], true);
+		}
+	}
+	else{ // caso soh tenha ataque unico
+		draw_set_colour(c_black);
+		if(mouse_x > move_select_x[0] && mouse_x < move_select_x[1] && mouse_y > move_select_y[0] && mouse_y < move_select_y[1]){
+			// mostra o ataque no retangulo
+			draw_rectangle(move_select_x[0], move_select_y[0], move_select_x[1], move_select_y[1], true);
+		}
+	}
+}
+
+else if(alarm[0] > -1){
+	depth = -300;
 }
 else{
 	temp = -1;
 	depth = -posicao;
 }
 
-if( temp > -1){
+if( temp > -1 && mouse_y < move_select_y[0]){
 	
 	var cnum = pilha[temp-1];
 	var tipo = strings[(cnum-1)*9+2];

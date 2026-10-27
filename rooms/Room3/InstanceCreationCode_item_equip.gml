@@ -1,0 +1,1 @@
+txt = "item_equip";

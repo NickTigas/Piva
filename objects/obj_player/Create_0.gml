@@ -28,8 +28,9 @@ deck_buffer_y = .2
 deckCount = 0;
 deckPoint = 0;
 
-scr_deck_all_cards();
+//scr_deck_all_cards();
 src_deck1_init();
+//scr_deck_init();
 scr_embaralhar_deck();
 
 i = 0;

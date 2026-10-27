@@ -17,7 +17,7 @@ if(selected == true){
 for(i=0;i< d_counters; i++){
 	if(i < 10){
 		draw_sprite(spr_dcounter,-1,x-card_width/2+2+8*i,y+card_height/2+4);
-		draw_set_color(c_blue);
+		draw_set_color(c_black);
 		draw_text(x,y,string(d_counters*10));
 	}
 	else{

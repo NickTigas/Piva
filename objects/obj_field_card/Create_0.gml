@@ -15,4 +15,25 @@ for(i=0; i<60; i++){
 pilha_count = 0;
 
 temp = -1;
+//273 406 x
+//405 /443 y
+// pega o num da direita, divide pela largura da sala e pega o numero
+//ataque 1
+move_select_x[0] = 0.4020618556701031*room_width; //273x_esq / 679 width da room1
+move_select_y[0] = 0.4602272727272727*room_height; //405y_cima / 880 height da room1
+move_select_x[1] = 0.5979381443298969*room_width; //406x_dir / 679 width da room1
+move_select_y[1] = 0.5034090909090909*room_height; //443y_baixo / 880 height da room1
+//ataque 2
+//273 406 x
+//462 /500 y
+move_select_x[2] = 0.4020618556701031*room_width; //273x_esq / 679 width da room1
+move_select_y[2] = 0.525*room_height; //462y_cima / 880 height da room1
+move_select_x[3] = 0.5979381443298969*room_width; //406x_dir / 679 width da room1
+move_select_y[3] = 0.625*room_height; //500_baixo / 880 height da room1
+
+d_counters = 0;
+move_select = 0;
+damage = 0;
+cardNum = 0;
+health_points = 0;
 
