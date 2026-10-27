@@ -3,92 +3,92 @@ function scr_init_vetores(){
 	i = 0,
 	j = 0,
 	z = 0;
-	// Cida
+	// Robotico
 	nums[i++] = ++z; //numero da carta 1
 	strings[j++] = "Lendario"; // raridade da carta
-	strings[j++] = "Cida"; // nome
+	strings[j++] = "Robotico"; // nome
 	strings[j++] = "ROBOTIC"; // tipo
-	nums[i++] = 100; //hp
+	nums[i++] = 30; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
-	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
-	strings[j++] = "oq ela faz";
-	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
-	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
-	strings[j++] = "\0"; // resistencia
-	nums[i++] = 0; //custo pra trocar
-
-	// Ronaldo
-	nums[i++] = ++z; //numero da carta 2
-	strings[j++] = "Lendario"; // raridade da carta
-	strings[j++] = "Ronaldo"; // nome
-	strings[j++] = "TIME"; // tipo
-	nums[i++] = 50; //hp
-	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
-	strings[j++] = "oq ela faz";
-	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
+	nums[i++] = 5 //dano (aumento em 50% a cada turno)
 	strings[j++] = "\0"; //atack ou passiva 2
 	strings[j++] = "\0";
 	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
+	nums[i++] = 0 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
 
-	// Piva
+	// Atraso
+	nums[i++] = ++z; //numero da carta 2
+	strings[j++] = "Lendario"; // raridade da carta
+	strings[j++] = "Atraso"; // nome
+	strings[j++] = "TIME"; // tipo
+	nums[i++] = 30; //hp
+	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
+	strings[j++] = "oq ela faz";
+	nums[i++] = 0; //custo
+	nums[i++] = 10 //dano Ataque = 50% de devolver o ataque pro inimigo
+	strings[j++] = "\0"; //atack ou passiva 2
+	strings[j++] = "\0";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
+	strings[j++] = "\0"; // resistencia
+	nums[i++] = 0; //custo pra trocar
+
+	// Poison
 	nums[i++] = ++z; //numero da carta 3
 	strings[j++] = "Lendario"; // raridade da carta
-	strings[j++] = "Piva"; // nome
+	strings[j++] = "Poison"; // nome
 	strings[j++] = "TOXIC"; // tipo
 	nums[i++] = 20; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 10 //dano
-	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
-	strings[j++] = "oq ela faz";
+	nums[i++] = 20 //dano
+	strings[j++] = "\0"; //atack ou passiva 2
+	strings[j++] = "\0";
 	nums[i++] = 0; //custo
-	nums[i++] = 10 //dano
+	nums[i++] = 0 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
 
-	// Place holder
+	// Pacifico
 	nums[i++] = ++z; //numero da carta 4
 	strings[j++] = "Lendario"; // raridade da carta
-	strings[j++] = "Place holder"; // nome
-	strings[j++] = "fds"; // tipo
-	nums[i++] = 70; //hp
+	strings[j++] = "Pacifico"; // nome
+	strings[j++] = "PACIFIC"; // tipo
+	nums[i++] = 40; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
+	nums[i++] = 10 //dano Ataque = 1/2 do ataque recebido
 	strings[j++] = "\0"; //atack ou passiva 2
 	strings[j++] = "\0";
 	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
+	nums[i++] = 0 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
 	
-	// Moreira
+	// Eletrico
 	nums[i++] = ++z; //numero da carta 5
 	strings[j++] = "Lendario"; // raridade da carta
-	strings[j++] = "Moreira"; // nome
+	strings[j++] = "Eletrico"; // nome
 	strings[j++] = "ELETRICITY"; // tipo
-	nums[i++] = 170; //hp
+	nums[i++] = 50; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
-	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
-	strings[j++] = "oq ela faz";
+	nums[i++] = 10 //dano
+	strings[j++] = "\0"; //atack ou passiva 2
+	strings[j++] = "\0";
 	nums[i++] = 0; //custo
-	nums[i++] = 30 //dano
+	nums[i++] = 0 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
@@ -182,6 +182,43 @@ function scr_init_vetores(){
 	strings[j++] = ""; //tiipo da fraqueza
 	strings[j++] = ""; // resistencia
 	nums[i++] = 0; //custo pra trocar
+	
+	// Man in the middle
+	nums[i++] = ++z; //numero da carta 11
+	strings[j++] = "Comum"; // raridade da carta
+	strings[j++] = "Man in the middle"; // nome
+	strings[j++] = "ITEM RAPIDO"; // tipo
+	nums[i++] = 0; //hp
+	strings[j++] = ""; //atack ou passiva 1
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //atack ou passiva 2
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //tiipo da fraqueza
+	strings[j++] = ""; // resistencia
+	nums[i++] = 0; //custo pra trocar
+	
+	// Hacker
+	nums[i++] = ++z; //numero da carta 12
+	strings[j++] = "Lendario"; // raridade da carta
+	strings[j++] = "Hacker"; // nome
+	strings[j++] = "VIRUS"; // tipo
+	nums[i++] = 20; //hp
+	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
+	strings[j++] = "oq ela faz";
+	nums[i++] = 0; //custo
+	nums[i++] = 20 //dano
+	strings[j++] = "\0"; //atack ou passiva 2
+	strings[j++] = "\0";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
+	strings[j++] = "\0"; // resistencia
+	nums[i++] = 0; //custo pra trocar
+	
 	
 	return z;
 }

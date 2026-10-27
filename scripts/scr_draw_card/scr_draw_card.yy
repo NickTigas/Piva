@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_draw_card",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw_card",
+  "parent":{
+    "name":"Deck",
+    "path":"folders/Scripts/Deck.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

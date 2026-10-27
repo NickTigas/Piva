@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dp_op_field_card",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dp_op_field_card",
+  "parent":{
+    "name":"Field",
+    "path":"folders/Scripts/Field.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
