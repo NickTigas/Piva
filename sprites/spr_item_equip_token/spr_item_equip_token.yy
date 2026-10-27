@@ -23,7 +23,7 @@
   ],
   "name":"spr_item_equip_token",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"item_tokens",
     "path":"folders/Sprites/item_tokens.yy",
@@ -50,7 +50,7 @@
     "eventStubScript":null,
     "eventToFunction":{},
     "length":1.0,
-    "lockOrigin":false,
+    "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
       "Keyframes":[],
@@ -75,8 +75,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":9,
+    "yorigin":9,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
