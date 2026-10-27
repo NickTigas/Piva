@@ -12,9 +12,9 @@ function scr_item_rapido(){
 	}
 	else if(cardNum = 8){
 		with(player){
-			temp3 = handCount;
+			temp3 = handCount-1;
 			temp2 = 0;
-			temp = temp3-1;
+			temp = temp3;
 			if(alarm[4] == -1){
 				alarm[4] = 10;
 			}

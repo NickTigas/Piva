@@ -6,10 +6,6 @@ var num = argument0;
 if(deckCount - num <0){
 return;
 }
-if(handCount == MAXHAND)
-{
-	return;
-}
 
 for(i = 0; i<num;i++){
 	deckCount --;
