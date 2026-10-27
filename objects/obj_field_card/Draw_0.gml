@@ -47,11 +47,20 @@ for( i=0; i<60;i++){
 		}
 	}
 }
+
 if(selected == true){
 	depth = - 1000;
 	for( i = pilha_count; i > 0; i--){
-		//draw_sprite(big_sprite_vetor[pilha[i-1]], -1, room_width/2+20*(i), room_height/2-20*(i));
-		draw_sprite_ext(big_sprite_vetor[pilha[i-1]], -1, room_width/2-pilha_count+20/2+20*(i), room_height/2+pilha_count*20/2-20*(i),1,1,270,c_white,1);
+
+		var cnum = pilha[i-1];
+		var tipo = strings[(cnum-1)*9+2];
+		var rot = 0;
+
+		if (tipo == "ITEM") {
+		    rot = 270;
+		}
+		
+		draw_sprite_ext(big_sprite_vetor[pilha[i-1]], -1, room_width/2-pilha_count+20/2+20*(i), room_height/2+pilha_count*20/2-20*(i),1,1,rot,c_white,1);
 		// 20 pixels a mais, buffer q aumenta ou diminui o tamanho das cartas
 	}
 	draw_sprite(big_sprite_vetor[cardNum], -1, room_width/2-pilha_count*20/2, room_height/2+pilha_count*20/2);
@@ -63,6 +72,13 @@ else{
 }
 
 if( temp > -1){
-	//draw_sprite(big_sprite_vetor[pilha[temp-1]], -1, room_width/2+20*(temp), room_height/2-20*(temp));
-	draw_sprite_ext(big_sprite_vetor[pilha[temp-1]], -1, room_width/2-pilha_count+20/2+20*(temp), room_height/2+pilha_count*20/2-20*(temp),1,1,270,c_white,1);
+	
+	var cnum = pilha[temp-1];
+	var tipo = strings[(cnum-1)*9+2];
+	var rot = 0;
+
+	if (tipo == "ITEM") {
+	    rot = 270;
+	}
+	draw_sprite_ext(big_sprite_vetor[pilha[temp-1]], -1, room_width/2-pilha_count+20/2+20*(temp), room_height/2+pilha_count*20/2-20*(temp),1,1,rot,c_white,1);
 }

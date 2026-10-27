@@ -25,31 +25,15 @@ for(i=0; i <4;i++){
 					sprite_index = sprite;
 					// cria uma carta no campo
 				}
-				player.handCount--;
-				player.hand[hand_posicao] = 0;
-				for(i = hand_posicao; i <5;i++){
-					player.hand[i] = player.hand[i+1];
-					if( i < player.handCount){
-						player.handCard[i] = player.handCard[i+1];
-						player.handCard[i].hand_posicao--;
-						player.handCard[i].depth--;
-						// muda a posicao da carta na mao
-					}
-				}
+				
 				// destruir a copia fake da carta q fica na mao
+				scr_mensagem_field_set(posicao, cardNum);
+				scr_remove_from_hand();
 				instance_destroy();
 			}
 		}
 	}
-	if(scr_is_item(self.cardNum)){
-		var field_pos = scr_field_pos();
-		
-		if(field_pos > -1 && player.fieldCard[field_pos] !=noone){
-			player.fieldCard[field_pos].pilha[player.fieldCard[field_pos].pilha_count++] = self.cardNum;
-			scr_remove_from_hand();
-			instance_destroy();
-		}
-	}
+	
 }
 if(scr_is_item_rapido(self.cardNum) && scr_in_center()){
 	scr_item_rapido(self.cardNum);
@@ -64,3 +48,25 @@ if(scr_is_item_rapido(self.cardNum) && scr_in_center()){
 	}
 	remove_from_hand = 0;
 }
+else if(scr_is_item(self.cardNum)){
+		var field_pos = scr_field_pos();
+		
+		if(field_pos > -1 && player.fieldCard[field_pos] !=noone){
+			player.fieldCard[field_pos].pilha[player.fieldCard[field_pos].pilha_count++] = self.cardNum;
+			scr_mensagem_item_add(field_pos, self.cardNum);
+			scr_remove_from_hand();
+			instance_destroy();
+		}
+}
+else if(scr_is_energy(self.cardNum)){
+	var field_pos = scr_field_pos();
+		
+		if(field_pos > -1 && player.fieldCard[field_pos] !=noone){
+			player.fieldCard[field_pos].pilha[player.fieldCard[field_pos].pilha_count++] = self.cardNum;
+			scr_mensagem_energy_add(field_pos, self.cardNum);
+			scr_remove_from_hand();
+			instance_destroy();
+		}
+}
+
+scr_mensagem_hand_change();

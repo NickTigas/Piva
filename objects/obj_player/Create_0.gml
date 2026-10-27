@@ -1,3 +1,5 @@
+randomize();
+
 x_pos = 228;
 y_pos = 770;
 
@@ -43,6 +45,7 @@ for(i = 0; i< 4;i++){
 //atack //205 438
 field_x_cord[0] = 207;
 field_y_cord[0] = 435;
+show_debug_message("Mensagem: " + string(field_x_cord[0],field_y_cord[0]));
 //campo 1 259 780
 field_x_cord[1] = 260;
 field_y_cord[1] = 707;
@@ -58,6 +61,10 @@ xview = 0;
 yview = deck_y;
 deck_x_2 = deck_x;
 
+// turnos do jogo
+start_game_turno = true;
+mulligan_turno = false;
+scr_init_vetores();
 
 // pilha da DP
 for(i=0; i <60;i++){
@@ -72,3 +79,5 @@ instance_create_layer(discard_x,discard_y,"Instances",obj_discard);
 discard_x = deck_x;
 discard_y = deck_y-card_height-10;
 discard_x_2 = discard_x;
+
+instance_create_layer(0,0,"Instances",obj_oponente); // remove quando o codiguim do cliente estiver feito

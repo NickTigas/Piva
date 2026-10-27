@@ -1,0 +1,13 @@
+Patch Notes 5.0 / 1.4
+
+- Foi arrumado o bug dps de usar carta de compra o item de equipamento n é equipado
+- Foi aumentado a área de ação de uso de cartas rápidas
+- Foi consertado o bug de equipamento desaparecer o sprite
+- Foi adicionado cartas de energia
+- Foi implementado a função de mulligan
+- Foi consertado o bug da mão inicial começar igual
+- Foi implementado o 1° turno, base para a mecânica de turnos
+- Foi implementado a base para a mecânica multiplayer
+- "Foi arrumado a interação da ferramenta de observação de informação de cada carta"
+
+
