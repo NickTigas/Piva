@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"2abc2418-788c-4fdd-bde0-52b69200d8b0","name":"2abc2418-788c-4fdd-bde0-52b69200d8b0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d717c95f-e7b1-454c-9791-04db28b97c2a","name":"d717c95f-e7b1-454c-9791-04db28b97c2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":331,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"cc0de633-8f8c-4288-9f78-c32b5a883fb2","blendMode":0,"displayName":"default","isLocked":false,"name":"cc0de633-8f8c-4288-9f78-c32b5a883fb2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"52ab79af-e66e-454a-b14e-b1295723b2a4","blendMode":0,"displayName":"default","isLocked":false,"name":"52ab79af-e66e-454a-b14e-b1295723b2a4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_big_unicard_semblante_da_ganancia",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2abc2418-788c-4fdd-bde0-52b69200d8b0","path":"sprites/spr_big_unicard_semblante_da_ganancia/spr_big_unicard_semblante_da_ganancia.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"887ad261-7a43-475c-9a52-77235727c0d1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d717c95f-e7b1-454c-9791-04db28b97c2a","path":"sprites/spr_big_unicard_semblante_da_ganancia/spr_big_unicard_semblante_da_ganancia.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"59c659a2-edc3-4132-b44c-9f9622becb56","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
