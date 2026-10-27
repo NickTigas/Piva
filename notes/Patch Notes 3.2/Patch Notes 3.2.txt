@@ -1,0 +1,8 @@
+Patch Notes 3.2 / 1.1
+
+- Foi adicionado tokens que classificam os tipos de cartas de item sendo eles até então: atack,campo,equipamento e cura
+- Foi implementado a mecânica de equipar itens em cartas
+- Foi adiciano a capacidade de ver qual carta está equipada (através do scr_pilha_select)
+- "Foi arrumado a interação da ferramenta de observação de informação de cada carta"
+
+

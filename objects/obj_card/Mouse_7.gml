@@ -37,4 +37,13 @@ for(i=0; i <4;i++){
 			}
 		}
 	}
+	if(scr_is_item(self.cardNum)){
+		var field_pos = scr_field_pos();
+		
+		if(field_pos > -1 && player.fieldCard[field_pos] !=noone){
+			player.fieldCard[field_pos].pilha[player.fieldCard[field_pos].pilha_count++] = self.cardNum;
+			scr_remove_from_hand();
+			instance_destroy();
+		}
+	}
 }

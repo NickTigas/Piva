@@ -1,7 +1,3 @@
-#macro MAXHAND 8
-
-
-
 x_pos = 228;
 y_pos = 770;
 
@@ -33,9 +29,6 @@ deckPoint = 0;
 scr_deck_all_cards();
 src_deck1_init();
 scr_embaralhar_deck();
-
-#macro CARDMAX 3
-
 
 i = 0;
 
