@@ -68,3 +68,7 @@ discard_x = deck_x;
 discard_y = deck_y-card_height-10;
 
 instance_create_layer(discard_x,discard_y,"Instances",obj_discard);
+
+discard_x = deck_x;
+discard_y = deck_y-card_height-10;
+discard_x_2 = discard_x;

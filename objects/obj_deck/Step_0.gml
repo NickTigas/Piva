@@ -4,17 +4,18 @@ if(keyboard_check_released(vk_up)){
 }
 if(keyboard_check_released(vk_down)){
 	player.face_up = 0;
+	player.deck_x_2 = player.deck_x;// vai retornar ao estado original
 	//player.deck_buffer_x = .4;
 }
 /* pressed = quando pressionar o botao acontece a acao
    released = quando soltar o botao acontece a acao
 */
-if(keyboard_check_released(vk_left)){
+/*if(keyboard_check_released(vk_left)){
 	with(player)
 	{
 		scr_embaralhar_deck();
 	}
-}
+}*/
 if(keyboard_check_released(vk_escape)){
 	game_restart();
 }
@@ -35,4 +36,8 @@ if(player.face_up){
 			}
 		}
 	}
+	depth = -300;
+}
+else{
+	depth = 0;
 }

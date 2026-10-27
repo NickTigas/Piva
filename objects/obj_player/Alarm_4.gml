@@ -1,8 +1,10 @@
 if(temp2 < temp3){
 	with(handCard[0]){
-		player.discard[player.discardCount++] = cardNum;
+		if(alarm[2] == -1){
+			alarm[2] = 10;
+		}
 		scr_remove_from_hand();
-		instance_destroy();
+		
 	}
 	temp2++;
 	alarm[4] = 10;

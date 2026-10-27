@@ -55,9 +55,12 @@ if(scr_is_item_rapido(self.cardNum) && scr_in_center()){
 	scr_item_rapido(self.cardNum);
 	// se for um item usavel remove da mao e usa ele na area central
 	if(remove_from_hand){
-		player.discard[player.discardCount++] = self.cardNum;
+		if(alarm[2] == -1){
+			alarm[2] = 10;
+			//valor n importa, a unica coisa e q ele vai se auto incrementar :)
+		}
 		scr_remove_from_hand();
-		instance_destroy();
+		
 	}
 	remove_from_hand = 0;
 }

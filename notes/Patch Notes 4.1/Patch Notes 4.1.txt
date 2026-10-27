@@ -1,0 +1,7 @@
+Patch Notes 4.0 / 1.3
+
+- Foi retirado o limite da quantidade de cartas possíveis a estarem presentes na mão
+- Foi implementado mais funções a "DP"como animação de descarte junto com cartas que interagem com ela mais a possibilidade de enxergar as cartas que compoem a DP
+- "Foi arrumado a interação da ferramenta de observação de informação de cada carta"
+
+

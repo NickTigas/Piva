@@ -27,7 +27,8 @@ with(player){
 		for(i = deckCount-1; i >= 0; i--){
 			if(deck[i] >0 && deck_x_2 < (deck_x - (deckCount - 1 - i)*(card_width+10) + i*deck_buffer_x)){
 				card_sprite = sprite_vetor[deck[i]];
-				draw_sprite(card_sprite, -1, deck_x_2+(deckCount - 1 - i)*(card_width+10) + i*deck_buffer_x, yview-i*deck_buffer_y);
+				draw_sprite(card_sprite, -1, deck_x_2+(deckCount - 1 - i)*(card_width) + (i+155)*deck_buffer_x, yview-(i-255)*deck_buffer_y);
+				// distancia das cartas
 			}
 		}
 	}
