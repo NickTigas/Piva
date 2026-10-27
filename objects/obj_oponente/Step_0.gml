@@ -1,3 +1,25 @@
+
+for(i=0;i<handCount;i++){
+	if(hand[i] > 0 && handCard[i] == noone){
+		handCard[i] = instance_create_depth(deck_x, deck_y,-i,obj_op_card);
+		var cardNum = hand[i],
+		sprite = sprite_vetor[cardNum],
+		posicao = i;
+		with(handCard[i]){
+			player = obj_oponente;
+			self.cardNum = cardNum;
+			self.hand_posicao = posicao;
+			y_pos = card_height/2;
+		}
+	}
+	else if(handCard[i] != noone && hand[i] != handCard[i].cardNum){
+		var cardNum = hand[i];
+		with(handCard[i]){
+			self.cardNum = cardNum;
+		}
+	}
+}	
+
 for(i=0;i<4;i++){
 	if(field[i] > 0 && fieldCard[i] == noone){
 		fieldCard[i] = instance_create_depth(field_x_cord[i], field_y_cord[i],1,obJ_op_field);
@@ -14,6 +36,8 @@ for(i=0;i<4;i++){
 			sprite_index = sprite;
 		}
 	}
+
+
 	/*else if(field[i] != noone && fieldCard[i] != fieldCard[i].cardNum){
 		var cardNum = field[i],
 		sprite = sprite_vetor[cardNum],
@@ -31,7 +55,6 @@ for(i=0;i<4;i++){
 			player.field[self.posicao] = cardNum;
 		}
 	}*/
-	
 	
 	else if(field[i] == 0 &&fieldCard[i] !=noone){
 		instance_destroy(fieldCard[i]);

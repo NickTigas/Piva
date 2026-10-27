@@ -16,6 +16,13 @@ pilha_count = 0;
 
 temp = -1;
 
+d_counters = 0;
 cardNum = 0;
 health_points = 0;
+oponente = noone;
+oponenteObj = noone;
+ja_morreu = false;
 //player = obj_oponente;
+
+life_cord_x = 515;
+life_cord_y = 158;

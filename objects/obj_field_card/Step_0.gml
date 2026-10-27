@@ -13,10 +13,10 @@ move_select_y[1] = 0.5034090909090909*room_height + pilha_count*20/2; //443y_bai
 //ataque 2
 //273 406 x
 //462 /500 y
-move_select_x[2] = 0.4020618556701031*room_width - pilha_count*20/2; //273x_esq / 679 width da room1
-move_select_y[2] = 0.525*room_height + pilha_count*20/2; //462y_cima / 880 height da room1
-move_select_x[3] = 0.5979381443298969*room_width - pilha_count*20/2; //406x_dir / 679 width da room1
-move_select_y[3] = 0.625*room_height + pilha_count*20/2; //500_baixo / 880 height da room1
+move_select_x[2] = 0.3564064801178203*room_width - pilha_count*20/2; //273x_esq / 679 width da room1
+move_select_y[2] = 0.5409090909090909*room_height + pilha_count*20/2; //462y_cima / 880 height da room1
+move_select_x[3] = 0.642120765832106*room_width - pilha_count*20/2; //406x_dir / 679 width da room1
+move_select_y[3] = 0.6465909090909091*room_height + pilha_count*20/2; //500_baixo / 880 height da room1
 
 if(alarm[0] == -1){
 	if(point_distance(x,y, x_pos, y_pos) > 10 && !selected){
@@ -32,40 +32,45 @@ if(alarm[0] == -1){
 
 var i;
 
+var cardNum = self.cardNum;
 health_points = scr_get_hp(cardNum);
 
-if(scr_is_academico(cardNum) && health_points <= d_counters)
+if((health_points <= 0 || d_counters <= 0) && !ja_morreu)
 {
-    if(player.field[posicao] != 0)
+    ja_morreu = true;
+
+    if(posicao == 0)
     {
-        for(var i = pilha_count - 1; i >= 0; i--)
+        player.pontos_count -= 1;
+		scr_mensagem_remove_vida(1);
+
+        if(player.pontos_count <= 0)
         {
-            scr_dp_field_card(i);
+            player.pontos_count = 0;
+
+            player.lose = true;
+            scr_mensagem_manda_reseults(false);
         }
+    }
+
+    for(var i = pilha_count-1; i >= 0; i--)
+    {
+        scr_dp_field_card(i);
     }
 
     scr_mensagem_field_set(posicao,0);
 
     player.field[posicao] = 0;
-
-    var cartaDestruida = player.fieldCard[posicao];
-
     player.fieldCard[posicao] = noone;
 
-    if(instance_exists(cartaDestruida))
-    {
-        with(cartaDestruida)
-        {
-            alarm[0] = 5;
-            depth = -400;
-        }
-    }
+    alarm[0] = 3;
 }
 
 token_count = 0;
 t_count = 0;
 c_count = 0;
 damage = 0;
+
 
 var i;
 for(i = 0;i < pilha_count; i++){//braco robotico

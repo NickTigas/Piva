@@ -16,6 +16,14 @@ for(i = 0; i< 4;i++){
 	// alocar memoria para o campo
 	fieldCard[i] = noone;
 }
+
+for(i=0;i<20;i++){
+	hand[i] = 0;
+	// comeca em 0 pq n tem nenhum card nessa posicao
+	// alocar memoria para o campo
+	handCard[i] = noone;
+}
+
 //attack //205 438
 field_x_cord[0] = 433;
 field_y_cord[0] = 429;
@@ -42,4 +50,9 @@ discard_y = deck_y+card_height-33;
 win = false;
 lose = false;
 
-pontos_count = 1;//normalmente 3
+pontos_count = 3;//normalmente 3
+
+card_view = false;
+
+life_cord_x = 515;
+life_cord_y = 158;

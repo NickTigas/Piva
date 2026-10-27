@@ -54,6 +54,22 @@ if(scr_is_item_rapido(self.cardNum) && scr_in_center()){
 	}
 	remove_from_hand = 0;
 }
+
+if(scr_is_item_healing(self.cardNum) && scr_in_center()){
+	scr_item_healing(self.cardNum);
+	// se for um item usavel remove da mao e usa ele na area central
+	if(remove_from_hand){
+		if(alarm[2] == -1){
+			alarm[2] = 10;
+			//valor n importa, a unica coisa e q ele vai se auto incrementar :)
+		}
+		scr_remove_from_hand();
+		
+	}
+	remove_from_hand = 0;
+}
+
+
 else if(scr_is_item(self.cardNum)){
 		var field_pos = scr_field_pos();
 		

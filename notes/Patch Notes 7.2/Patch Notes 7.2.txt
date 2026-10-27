@@ -1,0 +1,6 @@
+Patch Notes 7.2 / 1.9
+
+- Foi implementado a conexão com o servidor passando os buffers de como 
+cartas no campo, pilha de descarte, equipamento de cartas de energia e item, e
+troca de dano entre as cartas
+- Foi arrumado o dano das cartas com 1 golpe e 2 golpes.

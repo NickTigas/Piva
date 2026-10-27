@@ -1,3 +1,9 @@
+/*
+for(i=0;i<player.pontos_count;i++){
+	draw_sprite(spr_lifepoint,0,life_cord_x,life_cord_y);
+	//draw_text(life_cord_x,life_cord_y,string(player.pontos_count));
+}
+*/
 for(i = pilha_count; i > 0;i--){
 	if(scr_is_academico(pilha[i-1]) && alarm[0] == -1){
 		draw_sprite(sprite_vetor[pilha[i-1]], -1, x+5*i, y+5*i);
@@ -80,9 +86,9 @@ if(selected == true){
 	}
 	else{ // caso soh tenha ataque unico
 		draw_set_colour(c_black);
-		if(mouse_x > move_select_x[0] && mouse_x < move_select_x[1] && mouse_y > move_select_y[0] && mouse_y < move_select_y[1]){
+		if(mouse_x > move_select_x[2] && mouse_x < move_select_x[3] && mouse_y > move_select_y[2] && mouse_y < move_select_y[3]){
 			// mostra o ataque no retangulo
-			draw_rectangle(move_select_x[0], move_select_y[0], move_select_x[1], move_select_y[1], true);
+			draw_rectangle(move_select_x[2], move_select_y[2], move_select_x[3], move_select_y[3], true);
 		}
 	}
 }

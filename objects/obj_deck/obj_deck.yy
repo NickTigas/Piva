@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_deck",
-    "path":"sprites/spr_deck/spr_deck.yy",
+    "name":"spr_deck_og",
+    "path":"sprites/spr_deck_og/spr_deck_og.yy",
   },
   "spriteMaskId":null,
   "visible":true,

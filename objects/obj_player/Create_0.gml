@@ -102,7 +102,12 @@ lose = false;
 
 player = self;
 
-pontos_count = 1;//normalmente 3
+life_cord_x = 65;
+life_cord_y = 700;
+
+pontos_count = 3;//normalmente 3
+
+
 
 // botao pra passar o turno
 instance_create_depth(field_x_cord[3], field_y_cord[3] -card_height*1.2, - 1, obj_end_turno);

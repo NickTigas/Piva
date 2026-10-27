@@ -1,26 +1,51 @@
+show_debug_message("oponenteObj = " + string(oponenteObj));
+
+if (!instance_exists(oponenteObj))
+{
+    show_debug_message("oponenteObj nao existe");
+    exit;
+}
+
+
 if(d_counters < 0){
 	d_counters = 0;
 }
 
 var i;
 
+var cardNum = self.cardNum;
 health_points = scr_get_hp(cardNum);
 
-if(health_points <= 0 || d_counters <=0){
-	//player.field[posicao] = 0;
-	if(player.field[posicao] != 0){
-		for(i=pilha_count-1; i>=0; i--){
-			scr_dp_op_field_card(i);
-		}
-	}
-	//instance_destroy();
-	scr_mensagem_field_set(posicao,0);
-	player.field[posicao] = 0;
-	player.fieldCard[posicao] = 0;
-	if(alarm[0] == -1){
-		alarm[0] = 5;
-	}
-	depth = -400;
+if((health_points <= 0 || d_counters <= 0) && !ja_morreu)
+{
+    ja_morreu = true;
+
+    if(posicao == 0)
+    {
+		
+        player.pontos_count -= 1;
+		scr_mensagem_remove_vida(1);
+
+        if(player.pontos_count <= 0)
+        {
+            player.pontos_count = 0;
+
+            player.lose = true;
+            scr_mensagem_manda_reseults(false);
+        }
+    }
+
+    for(var i = pilha_count-1; i >= 0; i--)
+    {
+        scr_dp_field_card(i);
+    }
+
+    scr_mensagem_field_set(posicao,0);
+
+    player.field[posicao] = 0;
+    player.fieldCard[posicao] = noone;
+
+    alarm[0] = 3;
 }
 
 token_count = 0;

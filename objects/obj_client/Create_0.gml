@@ -15,8 +15,7 @@ de algunas features */
 #macro MENSAGEM_TURNO_CHANGE 12
 #macro MENSAGEM_ENERGY_REMOVE 13
 #macro MENSAGEM_SEND_RESULTADO 14
-#macro MENSAGEM_CARD_DESTROY 15
-
+#macro MENSAGEM_VIDA_REMOVE 15
 // valor dos macros indica como lidar com valor do buffer que sera enviado/recebido
 
 // armazena se o client se conectou ou não ao servidor 

@@ -1,5 +1,10 @@
 image_angle = 180;
 
+/*
+for(i=0;i<obj_oponente.pontos_count;i++){
+	draw_sprite(spr_lifepoint,0,life_cord_x,life_cord_y);
+	//draw_text(life_cord_x,life_cord_y,string(obj_oponente.pontos_count));
+}
 /*for(i = pilha_count; i > 0;i--){
 	if(pilha[i-1] > 0){
 		draw_sprite(sprite_vetor[pilha[i-1]], -1, x+5*i, y+5*i);
@@ -10,7 +15,7 @@ image_angle = 180;
 draw_self();
 
 if(selected == true){
-	draw_sprite(big_sprite_vetor[cardNum], -1, room_width/2, room_height/2);
+	//draw_sprite(big_sprite_vetor[cardNum], -1, room_width/2, room_height/2);
 }
 
 	

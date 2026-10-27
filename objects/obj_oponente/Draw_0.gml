@@ -1,3 +1,8 @@
+for(i=0;i<pontos_count;i++){
+	draw_sprite(spr_lifepoint,0,life_cord_x+(i*50),life_cord_y);
+	//draw_text(life_cord_x,life_cord_y,string(obj_oponente.pontos_count));
+}
+
 for(i=0;i< deckCount; i++){
 	draw_sprite_ext(spr_unicard_back, -1, deck_x - deck_buffer_x*i, deck_y - deck_buffer_y*i, 1,1,180,c_white,1);
 }
