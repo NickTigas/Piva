@@ -8,7 +8,8 @@ function src_deck1_init(){
 	deck[i++] = 4;
 	deck[i++] = 5;
 	deck[i++] = 6;
-	
+	deck[i++] = 7;
+	deck[i++] = 8;
 	
 	deckCount =i;
 }

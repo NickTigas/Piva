@@ -7,6 +7,9 @@ sprite_vetor[i++] = spr_unicard_epic; //piva
 sprite_vetor[i++] = spr_unicard_legendary; //place holder
 sprite_vetor[i++] = spr_unicard_moreira; //moreira
 sprite_vetor[i++] = spr_unicard_bracorobotico; //braço robotico
+sprite_vetor[i++] = spr_unicard_potedaganancia; //braço pote da ganacia
+sprite_vetor[i++] = spr_unicard_coic; //braço coic
+
 
 return;
 }

@@ -110,5 +110,41 @@ function scr_init_vetores(){
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
+	
+	// Pote da ganancia
+	nums[i++] = ++z; //numero da carta
+	strings[j++] = "Comum"; // raridade da carta
+	strings[j++] = "Pote da Ganacia"; // nome
+	strings[j++] = "ITEM RAPIDO"; // tipo
+	nums[i++] = 0; //hp
+	strings[j++] = "Compre 2 cartas"; //atack ou passiva 1
+	strings[j++] = "Compra 2 cartas";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //atack ou passiva 2
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
+	strings[j++] = "\0"; // resistencia
+	nums[i++] = 0; //custo pra trocar
+	
+	// Barramento do Coic
+	nums[i++] = ++z; //numero da carta
+	strings[j++] = "Comum"; // raridade da carta
+	strings[j++] = "Barramento do Coic"; // nome
+	strings[j++] = "ITEM RAPIDO"; // tipo
+	nums[i++] = 0; //hp
+	strings[j++] = "Barrado"; //atack ou passiva 1
+	strings[j++] = "Jogue todas as cartas da sua mão para a pilha da DP";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //atack ou passiva 2
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
+	strings[j++] = "\0"; // resistencia
+	nums[i++] = 0; //custo pra trocar
 
 }
