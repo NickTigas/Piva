@@ -1,0 +1,7 @@
+Patch Notes Server 1.0
+
+- Foi implementado o servidor com as funções de básicas para conectar com o servidor através de socket
+- Função para criar o servidor e função para mandar mensagem para o servidor
+- Função para encontrar o oponente via socket
+- Função de criação de uma partida
+- Função para conectar e desconetar de uma partida

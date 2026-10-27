@@ -1,0 +1,15 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Objects","order":2,"path":"folders/Objects.yy",},
+    {"name":"Scripts","order":3,"path":"folders/Scripts.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Patch Notes Server 1.0","order":4,"path":"notes/Patch Notes Server 1.0/Patch Notes Server 1.0.yy",},
+    {"name":"scr_find_oponente","order":4,"path":"scripts/scr_find_oponente/scr_find_oponente.yy",},
+    {"name":"scr_server_handle_connect","order":1,"path":"scripts/scr_server_handle_connect/scr_server_handle_connect.yy",},
+    {"name":"scr_server_handle_disconnect","order":5,"path":"scripts/scr_server_handle_disconnect/scr_server_handle_disconnect.yy",},
+    {"name":"scr_server_handle_mensagem","order":3,"path":"scripts/scr_server_handle_mensagem/scr_server_handle_mensagem.yy",},
+    {"name":"scr_set_partida","order":2,"path":"scripts/scr_set_partida/scr_set_partida.yy",},
+  ],
+}
