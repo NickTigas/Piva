@@ -59,5 +59,12 @@ yview = deck_y;
 deck_x_2 = deck_x;
 
 
+// pilha da DP
+for(i=0; i <60;i++){
+	discard[i] = 0;
+}
+discardCount = 0;
+discard_x = deck_x;
+discard_y = deck_y-card_height-10;
 
-
+instance_create_layer(discard_x,discard_y,"Instances",obj_discard);

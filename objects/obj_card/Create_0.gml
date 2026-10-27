@@ -14,3 +14,5 @@ pr_x = 0;
 pr_y = 0;
 
 selected = false;
+
+remove_from_hand = -1;

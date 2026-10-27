@@ -1,3 +1,7 @@
+if(player.alarm[0] > -1){return;}
+if(player.alarm[3] > -1){return;}
+if(player.alarm[4] > -1){return;}
+
 for(i=0; i <4;i++){
 	if(player.field[i] == 0 && scr_is_academico(self.cardNum)){
 		if(x> player.field_x_cord[i] - card_width/2 && x < player.field_x_cord[i] + card_width/2){
@@ -46,4 +50,14 @@ for(i=0; i <4;i++){
 			instance_destroy();
 		}
 	}
+}
+if(scr_is_item_rapido(self.cardNum) && scr_in_center()){
+	scr_item_rapido(self.cardNum);
+	// se for um item usavel remove da mao e usa ele na area central
+	if(remove_from_hand){
+		player.discard[player.discardCount++] = self.cardNum;
+		scr_remove_from_hand();
+		instance_destroy();
+	}
+	remove_from_hand = 0;
 }

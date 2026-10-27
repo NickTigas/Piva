@@ -18,6 +18,10 @@ if(card_in_hand == true){
 		y = y_pos;
 		speed = 0;
 	}
+	depth = -1000;
+}
+else{
+	depth = -hand_posicao;
 }
 if(mouse_check_button_released(mb_left)){
 	selected = false;

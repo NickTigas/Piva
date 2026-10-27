@@ -1,0 +1,7 @@
+Patch Notes 4.0 / 1.2
+
+- Foi adicionado tokens que classificam os tipos de cartas de energia sendo eles até então: eletricity,normal,robotic e toxic
+- Foi implementado a "DP" a qual corresponde a pilha de descarte junto com cartas que interagem com ela
+- "Foi arrumado a interação da ferramenta de observação de informação de cada carta"
+
+
