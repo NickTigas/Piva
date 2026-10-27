@@ -11,7 +11,7 @@
     {"name":"item_tokens","order":6,"path":"folders/Sprites/item_tokens.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Patch Notes 4.0","order":7,"path":"notes/Patch Notes 4.0/Patch Notes 4.0.yy",},
+    {"name":"Patch Notes 4.1","order":7,"path":"notes/Patch Notes 4.1/Patch Notes 4.1.yy",},
     {"name":"macros","order":4,"path":"objects/macros/macros.yy",},
     {"name":"obj_card","order":2,"path":"objects/obj_card/obj_card.yy",},
     {"name":"obj_discard","order":5,"path":"objects/obj_discard/obj_discard.yy",},
@@ -21,6 +21,7 @@
     {"name":"scr_draw_card_info","order":4,"path":"scripts/scr_draw_card_info/scr_draw_card_info.yy",},
     {"name":"scr_embaralhar_deck","order":1,"path":"scripts/scr_embaralhar_deck/scr_embaralhar_deck.yy",},
     {"name":"scr_field_pos","order":11,"path":"scripts/scr_field_pos/scr_field_pos.yy",},
+    {"name":"scr_hand_card_select","order":17,"path":"scripts/scr_hand_card_select/scr_hand_card_select.yy",},
     {"name":"scr_in_center","order":15,"path":"scripts/scr_in_center/scr_in_center.yy",},
     {"name":"scr_init_big_sprite_vetor","order":5,"path":"scripts/scr_init_big_sprite_vetor/scr_init_big_sprite_vetor.yy",},
     {"name":"scr_init_vetores","order":3,"path":"scripts/scr_init_vetores/scr_init_vetores.yy",},

@@ -29,7 +29,7 @@
   },
   "name":"PIVA",
   "resources":[
-    {"id":{"name":"Patch Notes 4.0","path":"notes/Patch Notes 4.0/Patch Notes 4.0.yy",},},
+    {"id":{"name":"Patch Notes 4.1","path":"notes/Patch Notes 4.1/Patch Notes 4.1.yy",},},
     {"id":{"name":"macros","path":"objects/macros/macros.yy",},},
     {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},},
     {"id":{"name":"obj_deck","path":"objects/obj_deck/obj_deck.yy",},},
@@ -42,6 +42,7 @@
     {"id":{"name":"scr_draw_card_info","path":"scripts/scr_draw_card_info/scr_draw_card_info.yy",},},
     {"id":{"name":"scr_embaralhar_deck","path":"scripts/scr_embaralhar_deck/scr_embaralhar_deck.yy",},},
     {"id":{"name":"scr_field_pos","path":"scripts/scr_field_pos/scr_field_pos.yy",},},
+    {"id":{"name":"scr_hand_card_select","path":"scripts/scr_hand_card_select/scr_hand_card_select.yy",},},
     {"id":{"name":"scr_in_center","path":"scripts/scr_in_center/scr_in_center.yy",},},
     {"id":{"name":"scr_init_big_sprite_vetor","path":"scripts/scr_init_big_sprite_vetor/scr_init_big_sprite_vetor.yy",},},
     {"id":{"name":"scr_init_sprite_vetor","path":"scripts/scr_init_sprite_vetor/scr_init_sprite_vetor.yy",},},
