@@ -36,4 +36,5 @@ move_select = 0;
 damage = 0;
 cardNum = 0;
 health_points = 0;
-
+remove_energy = 0;
+temp = -1;

@@ -18,3 +18,4 @@ temp = -1;
 
 cardNum = 0;
 health_points = 0;
+//player = obj_oponente;

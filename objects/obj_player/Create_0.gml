@@ -3,6 +3,9 @@ randomize();
 x_pos = 228;
 y_pos = 770;
 
+x_msg = 600;
+y_msg = 25;
+
 handCount = 0;
 for(i = 0; i<8; i++){
 	hand[i] = 0;
@@ -65,6 +68,13 @@ deck_x_2 = deck_x;
 // turnos do jogo
 start_game_turno = true;
 mulligan_turno = false;
+turno_draw = false;
+turno_campo = false;
+turno_discard = 0;
+field_select = 0;
+deck_card_select = 0;
+academico_set = false;
+energy_set = false;
 scr_init_vetores();
 
 // pilha da DP
@@ -82,3 +92,17 @@ discard_y = deck_y-card_height-10;
 discard_x_2 = discard_x;
 
 //instance_create_layer(0,0,"Instances",obj_oponente); // remove quando o codiguim do cliente estiver feito
+
+turno = 0;
+pausa = false;
+
+//condicoes de vitoria
+win = false;
+lose = false;
+
+player = self;
+
+pontos_count = 1;//normalmente 3
+
+// botao pra passar o turno
+instance_create_depth(field_x_cord[3], field_y_cord[3] -card_height*1.2, - 1, obj_end_turno);

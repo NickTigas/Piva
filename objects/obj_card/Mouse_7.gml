@@ -1,16 +1,19 @@
+if(!player.turno_campo){return;}
+if(scr_pausa()){return;}
+if(player.field_select > 0){return;}
+if(player.turno_discard > 0){return;}
+if(player.deck_card_select > 0){return;}
 
-
-if(player.alarm[0] > -1){return;}
-if(player.alarm[3] > -1){return;}
-if(player.alarm[4] > -1){return;}
 
 for(i=0; i <4;i++){
 	if(player.field[i] == 0 && scr_is_academico(self.cardNum)){
+		
 		if(x> player.field_x_cord[i] - card_width/2 && x < player.field_x_cord[i] + card_width/2){
 			if(y> player.field_y_cord[i] - card_height/2 && y/*x*/ < player.field_y_cord[i] + card_height/2){
 				player.field[i] = self.cardNum;
 				// permite que nao possa colocar 2 cartas na mesma posicao
-				
+		if(player.academico_set){return;}
+		player.academico_set = true;		
 				player.fieldCard[i] = instance_create_depth(player.field_x_cord[i], player.field_y_cord[i], 1, obj_field_card);
 				var
 				sprite = sprite_index,
@@ -29,6 +32,7 @@ for(i=0; i <4;i++){
 				}
 				
 				// destruir a copia fake da carta q fica na mao
+				scr_mensagem_card_show(cardNum);
 				scr_mensagem_field_set(posicao, cardNum);
 				scr_remove_from_hand();
 				instance_destroy();
@@ -56,16 +60,23 @@ else if(scr_is_item(self.cardNum)){
 		if(field_pos > -1 && player.fieldCard[field_pos] !=noone){
 			player.fieldCard[field_pos].pilha[player.fieldCard[field_pos].pilha_count++] = self.cardNum;
 			scr_mensagem_item_add(field_pos, self.cardNum);
+			//scr_mensagem_card_show(self.cardNum); // usar 1 vez a carta por turno
 			scr_remove_from_hand();
 			instance_destroy();
 		}
 }
+
+
 else if(scr_is_energy(self.cardNum)){
+	if(player.energy_set){return;}
 	var field_pos = scr_field_pos();
 		
 		if(field_pos > -1 && player.fieldCard[field_pos] !=noone){
+			
 			player.fieldCard[field_pos].pilha[player.fieldCard[field_pos].pilha_count++] = self.cardNum;
 			scr_mensagem_energy_add(field_pos, self.cardNum);
+			player.energy_set = true;
+			scr_mensagem_card_show(self.cardNum); // usar 1 vez a carta por turno
 			scr_remove_from_hand();
 			instance_destroy();
 		}

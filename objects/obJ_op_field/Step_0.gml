@@ -2,16 +2,15 @@ if(d_counters < 0){
 	d_counters = 0;
 }
 
-var i,
-cardNum;
-cardNum = self.cardNum;
+var i;
+
 health_points = scr_get_hp(cardNum);
 
 if(health_points <= 0 || d_counters <=0){
-	player.field[posicao] = 0;
+	//player.field[posicao] = 0;
 	if(player.field[posicao] != 0){
 		for(i=pilha_count-1; i>=0; i--){
-			scr_dp_field_card(i);
+			scr_dp_op_field_card(i);
 		}
 	}
 	//instance_destroy();
@@ -19,7 +18,7 @@ if(health_points <= 0 || d_counters <=0){
 	player.field[posicao] = 0;
 	player.fieldCard[posicao] = 0;
 	if(alarm[0] == -1){
-		alarm[0] = 3;
+		alarm[0] = 5;
 	}
 	depth = -400;
 }

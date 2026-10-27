@@ -32,4 +32,9 @@ with(player){
 			}
 		}
 	}
+	if(turno_draw){
+		
+		draw_sprite(spr_draw_button, 0, deck_x + deckCount*deck_buffer_x, deck_y + deckCount*deck_buffer_y );
+		//deck_x + deckCount*deck_buffer_x, deck_y + deckCount*deck_buffer_y,
+	}
 }

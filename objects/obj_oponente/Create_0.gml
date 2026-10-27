@@ -16,7 +16,7 @@ for(i = 0; i< 4;i++){
 	// alocar memoria para o campo
 	fieldCard[i] = noone;
 }
-//atack //205 438
+//attack //205 438
 field_x_cord[0] = 433;
 field_y_cord[0] = 429;
 //campo 1 259 780
@@ -37,3 +37,9 @@ discardCount = 0;
 discard_x = deck_x;
 discard_y = deck_y+card_height-33;
 //68 322
+
+//condicoes de vitoria
+win = false;
+lose = false;
+
+pontos_count = 1;//normalmente 3

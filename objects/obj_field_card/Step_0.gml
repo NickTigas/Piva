@@ -18,29 +18,54 @@ move_select_y[2] = 0.525*room_height + pilha_count*20/2; //462y_cima / 880 heigh
 move_select_x[3] = 0.5979381443298969*room_width - pilha_count*20/2; //406x_dir / 679 width da room1
 move_select_y[3] = 0.625*room_height + pilha_count*20/2; //500_baixo / 880 height da room1
 
-var i,
-cardNum;
-cardNum = self.cardNum;
-health_points = scr_get_hp(cardNum);
-
-if(scr_is_academico(cardNum) && health_points <= d_counters){
-	if(player.field[posicao] != 0){
-		for(i=pilha_count-1; i>=0; i--){
-			scr_dp_field_card(i);
-		}
+if(alarm[0] == -1){
+	if(point_distance(x,y, x_pos, y_pos) > 10 && !selected){
+		move_towards_point(x_pos, y_pos, 10);
 	}
-	
-	scr_mensagem_field_set(posicao,0);
-	player.field[posicao] = 0;
-	player.fieldCard[posicao] = 0;
-	if(alarm[0] == -1){
-		alarm[0] = 3;
+	else if(point_distance(x,y, x_pos, y_pos) <= 10){
+		x = x_pos;
+		y = y_pos;
+		speed = 0;
 	}
-	depth = -400;
 	
 }
 
+var i;
+
+health_points = scr_get_hp(cardNum);
+
+if(scr_is_academico(cardNum) && health_points <= d_counters)
+{
+    if(player.field[posicao] != 0)
+    {
+        for(var i = pilha_count - 1; i >= 0; i--)
+        {
+            scr_dp_field_card(i);
+        }
+    }
+
+    scr_mensagem_field_set(posicao,0);
+
+    player.field[posicao] = 0;
+
+    var cartaDestruida = player.fieldCard[posicao];
+
+    player.fieldCard[posicao] = noone;
+
+    if(instance_exists(cartaDestruida))
+    {
+        with(cartaDestruida)
+        {
+            alarm[0] = 5;
+            depth = -400;
+        }
+    }
+}
+
 token_count = 0;
+t_count = 0;
+c_count = 0;
+damage = 0;
 
 var i;
 for(i = 0;i < pilha_count; i++){//braco robotico
@@ -50,6 +75,38 @@ for(i = 0;i < pilha_count; i++){//braco robotico
 
 }
 if(mouse_check_button_released(mb_left)){
+	
+	if(player.field[0] == 0 && scr_field_pos() == 0){
+		scr_messagem_card_pos_swap(posicao, 0);
+		player.field[0] = cardNum;
+		player.field[posicao] = 0;
+		player.fieldCard[0] = player.fieldCard[posicao];
+		player.fieldCard[posicao] = noone;
+		posicao = 0;
+		x_pos = player.field_x_cord[posicao];
+		y_pos = player.field_y_cord[posicao];
+	}
+	
+	if(remove_energy>0){
+		if(temp > -1 && scr_is_energy(pilha[temp])){
+			scr_mensagem_energy_remove(posicao, temp);
+			player.discard[player.discardCount++] = pilha[temp];
+			for(i = temp; i<pilha_count-1; i++){
+				pilha[i] = pilha[i+1];
+			}
+			pilha[pilha_count--] = 0;
+			remove_energy--;
+			if(remove_energy == 0){player.field_select = 0;}
+			for(i=0;i<token_count;i++){
+				tokens[i] = 0;
+			}
+		}
+	}
+	
+	if(!player.turno_campo){
+		selected = false;
+		return;
+	}
 	/*
 	if( temp > -1){
 	pilha[temp-1] =4;
@@ -57,18 +114,26 @@ if(mouse_check_button_released(mb_left)){
 	if(posicao == 0 && selected){
 		if(strings[(cardNum-1)*9+5] != "\0"){// se o academico tiver 2 ataques
 			if(mouse_x > move_select_x[0] && mouse_x < move_select_x[1] && mouse_y > move_select_y[0] && mouse_y < move_select_y[1]){
-				move_select = 1;
-				damage = scr_get_damage(cardNum, move_select)/10;
-				scr_mensagem_manda_damage(damage, 0);
+				player.move_select = 1;
+				damage = scr_get_damage(cardNum, player.move_select)/10;
+				scr_mensagem_manda_damage(damage, 0, player.move_select);
+				scr_mensagem_turno_change();
+				player.turno_campo = false;
 			}
 			else if(mouse_x > move_select_x[2] && mouse_x < move_select_x[3] && mouse_y > move_select_y[2] && mouse_y < move_select_y[3]){
-				move_select = 2;
-				damage = scr_get_damage(cardNum, move_select)/10;
-				scr_mensagem_manda_damage(damage, 0);
+				player.move_select = 2;
+				damage = scr_get_damage(cardNum, player.move_select)/10;
+				scr_mensagem_manda_damage(damage, 0, player.move_select);
+				scr_mensagem_turno_change();
+				player.turno_campo = false;
 			}
 		}
 		else{
-			
+			player.move_select = 1;
+			damage = scr_get_damage(cardNum, player.move_select)/10;
+			scr_mensagem_manda_damage(damage, 0, player.move_select);
+			scr_mensagem_turno_change();
+			player.turno_campo = false;
 		}
 	}
 	selected = false;

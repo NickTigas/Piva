@@ -8,7 +8,7 @@ for(i=0;i<4;i++){
 			player = obj_oponente;
 			self.cardNum = cardNum;
 			self.posicao = posicao;
-			d_counters = scr_get_hp(cardNum)/10;
+			d_counters = scr_get_hp(self.cardNum)/10;
 			x_pos = player.field_x_cord[self.posicao];
 			y_pos = player.field_y_cord[self.posicao];
 			sprite_index = sprite;
@@ -32,9 +32,11 @@ for(i=0;i<4;i++){
 		}
 	}*/
 	
+	
 	else if(field[i] == 0 &&fieldCard[i] !=noone){
 		instance_destroy(fieldCard[i]);
 		fieldCard[i] = noone;
 	}
+	
 	
 }

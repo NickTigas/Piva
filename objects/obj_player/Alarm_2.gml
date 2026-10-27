@@ -5,7 +5,12 @@ if(scr_is_academico(self) == 1){
 		alarm[2] = 90;
 	}
 }
-else{
+else{*/
+	
 	mulligan_turno = false;
+	
+//}
+
+if(turno == 1){
+	turno_draw = true;
 }
-*/

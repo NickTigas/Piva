@@ -1,0 +1,1 @@
+scr_init_big_sprite_vetor();
