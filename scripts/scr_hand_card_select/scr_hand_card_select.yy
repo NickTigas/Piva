@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_hand_card_select",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Hand",
+    "path":"folders/Scripts/Hand.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

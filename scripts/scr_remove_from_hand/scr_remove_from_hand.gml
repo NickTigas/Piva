@@ -10,5 +10,6 @@ function scr_remove_from_hand(){
 			// muda a posicao da carta na mao
 		}
 	}
+	scr_mensagem_hand_change(); // pega os dados da remoção de carta da mão
 	return;
 }

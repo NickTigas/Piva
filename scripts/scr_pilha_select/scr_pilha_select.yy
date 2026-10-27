@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_pilha_select",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Field",
+    "path":"folders/Scripts/Field.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

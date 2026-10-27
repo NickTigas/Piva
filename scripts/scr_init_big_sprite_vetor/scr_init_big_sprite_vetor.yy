@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_init_big_sprite_vetor",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Init",
+    "path":"folders/Scripts/Init.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

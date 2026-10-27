@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_is_item",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Is",
+    "path":"folders/Scripts/Is.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

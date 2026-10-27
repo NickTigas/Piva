@@ -4,7 +4,7 @@ function scr_init_vetores(){
 	j = 0,
 	z = 0;
 	// Cida
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 1
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Cida"; // nome
 	strings[j++] = "Eletronica"; // tipo
@@ -22,7 +22,7 @@ function scr_init_vetores(){
 	nums[i++] = 2; //custo pra trocar
 
 	// Ronaldo
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 2
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Ronaldo"; // nome
 	strings[j++] = "Eletronica"; // tipo
@@ -40,7 +40,7 @@ function scr_init_vetores(){
 	nums[i++] = 2; //custo pra trocar
 
 	// Piva
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 3
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Piva"; // nome
 	strings[j++] = "Eletronica"; // tipo
@@ -58,7 +58,7 @@ function scr_init_vetores(){
 	nums[i++] = 2; //custo pra trocar
 
 	// Place holder
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 4
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Place holder"; // nome
 	strings[j++] = "fds"; // tipo
@@ -76,7 +76,7 @@ function scr_init_vetores(){
 	nums[i++] = 2; //custo pra trocar
 	
 	// Moreira
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 5
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Moreira"; // nome
 	strings[j++] = "Eletronica"; // tipo
@@ -94,7 +94,7 @@ function scr_init_vetores(){
 	nums[i++] = 2; //custo pra trocar
 	
 	// BracoRobotico
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 6
 	strings[j++] = "Comum"; // raridade da carta
 	strings[j++] = "Braço Robótico"; // nome
 	strings[j++] = "ITEM"; // tipo
@@ -112,7 +112,7 @@ function scr_init_vetores(){
 	nums[i++] = 0; //custo pra trocar
 	
 	// Pote da ganancia
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 7
 	strings[j++] = "Comum"; // raridade da carta
 	strings[j++] = "Pote da Ganacia"; // nome
 	strings[j++] = "ITEM RAPIDO"; // tipo
@@ -130,7 +130,7 @@ function scr_init_vetores(){
 	nums[i++] = 0; //custo pra trocar
 	
 	// Barramento do Coic
-	nums[i++] = ++z; //numero da carta
+	nums[i++] = ++z; //numero da carta 8
 	strings[j++] = "Comum"; // raridade da carta
 	strings[j++] = "Barramento do Coic"; // nome
 	strings[j++] = "ITEM RAPIDO"; // tipo
@@ -145,6 +145,24 @@ function scr_init_vetores(){
 	nums[i++] = 0 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
+	nums[i++] = 0; //custo pra trocar
+	
+	// Energia Eletrica
+	nums[i++] = ++z; //numero da carta 9
+	strings[j++] = "Comum"; // raridade da carta
+	strings[j++] = "Energia Eletrica"; // nome
+	strings[j++] = "ENERGY"; // tipo
+	nums[i++] = 0; //hp
+	strings[j++] = ""; //atack ou passiva 1
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //atack ou passiva 2
+	strings[j++] = "";
+	nums[i++] = 0; //custo
+	nums[i++] = 0 //dano
+	strings[j++] = ""; //tiipo da fraqueza
+	strings[j++] = ""; // resistencia
 	nums[i++] = 0; //custo pra trocar
 
 }

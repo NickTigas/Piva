@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"src_get_hp",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Get",
+    "path":"folders/Scripts/Get.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

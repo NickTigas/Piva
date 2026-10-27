@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_remove_from_hand",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Hand",
+    "path":"folders/Scripts/Hand.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

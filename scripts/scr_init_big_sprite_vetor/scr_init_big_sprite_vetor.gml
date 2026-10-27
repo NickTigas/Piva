@@ -9,6 +9,8 @@ function scr_init_big_sprite_vetor(){
 	big_sprite_vetor[i++] = spr_big_unicard_bracorobotico; //braço robotico
 	big_sprite_vetor[i++] = spr_big_unicard_potedaganancia; // pote da gananica
 	big_sprite_vetor[i++] = spr_big_unicard_coic; // barramento do coic
+	big_sprite_vetor[i++] = spr_big_unicard_energy_eletricity; // energia eletrica
+	
 	
 return;
 }

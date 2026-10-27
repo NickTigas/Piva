@@ -9,6 +9,7 @@ sprite_vetor[i++] = spr_unicard_moreira; //moreira
 sprite_vetor[i++] = spr_unicard_bracorobotico; //braço robotico
 sprite_vetor[i++] = spr_unicard_potedaganancia; //braço pote da ganacia
 sprite_vetor[i++] = spr_unicard_coic; //braço coic
+sprite_vetor[i++] = spr_unicard_energy_eletricity; //braço coic
 
 
 return;

@@ -1,4 +1,5 @@
 function scr_pilha_select(){
+	temp = -1;
 	for(i=1; i <= pilha_count; i++){
 		if(mouse_x > room_width/2-pilha_count*20/2+20*i-20 && mouse_x < room_width/2 - pilha_count*20/2+20*i+20){
 		if(mouse_y > room_height/2+pilha_count*20/2-20*i-big_card_height/2 && mouse_y < room_height/2 + pilha_count*20/2-20*i+big_card_height/2){

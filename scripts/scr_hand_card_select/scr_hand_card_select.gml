@@ -7,5 +7,4 @@ function scr_hand_card_select(){
 		}
 	}
 	return -1;
-	
 }

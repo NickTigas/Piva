@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_item_rapido",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Misc",
+    "path":"folders/Scripts/Misc.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

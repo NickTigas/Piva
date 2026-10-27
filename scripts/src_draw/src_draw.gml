@@ -22,4 +22,6 @@ for(i = 0; i<num;i++){
 		cardNum = player.hand[hand_posicao];
 	}
 }
+	scr_mensagem_hand_change(); // pega os dados da compra de carta
+	return;
 }

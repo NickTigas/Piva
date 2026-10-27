@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_is_energy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_is_energy",
+  "parent":{
+    "name":"Is",
+    "path":"folders/Scripts/Is.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
