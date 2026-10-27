@@ -7,55 +7,55 @@ function scr_init_vetores(){
 	nums[i++] = ++z; //numero da carta 1
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Cida"; // nome
-	strings[j++] = "Eletronica"; // tipo
+	strings[j++] = "ROBOTIC"; // tipo
 	nums[i++] = 100; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
-	nums[i++] = 2; //custo pra trocar
+	nums[i++] = 0; //custo pra trocar
 
 	// Ronaldo
 	nums[i++] = ++z; //numero da carta 2
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Ronaldo"; // nome
-	strings[j++] = "Eletronica"; // tipo
+	strings[j++] = "TIME"; // tipo
 	nums[i++] = 50; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
-	nums[i++] = 2; //custo pra trocar
+	nums[i++] = 0; //custo pra trocar
 
 	// Piva
 	nums[i++] = ++z; //numero da carta 3
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Piva"; // nome
-	strings[j++] = "Eletronica"; // tipo
+	strings[j++] = "TOXIC"; // tipo
 	nums[i++] = 20; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 10 //dano
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 10 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
-	nums[i++] = 2; //custo pra trocar
+	nums[i++] = 0; //custo pra trocar
 
 	// Place holder
 	nums[i++] = ++z; //numero da carta 4
@@ -66,32 +66,32 @@ function scr_init_vetores(){
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
-	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
-	strings[j++] = "oq ela faz";
+	nums[i++] = 30 //dano
+	strings[j++] = "\0"; //atack ou passiva 2
+	strings[j++] = "\0";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
-	nums[i++] = 2; //custo pra trocar
+	nums[i++] = 0; //custo pra trocar
 	
 	// Moreira
 	nums[i++] = ++z; //numero da carta 5
 	strings[j++] = "Lendario"; // raridade da carta
 	strings[j++] = "Moreira"; // nome
-	strings[j++] = "Eletronica"; // tipo
+	strings[j++] = "ELETRICITY"; // tipo
 	nums[i++] = 170; //hp
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
-	nums[i++] = 2; //custo pra trocar
+	nums[i++] = 0; //custo pra trocar
 	
 	// BracoRobotico
 	nums[i++] = ++z; //numero da carta 6
@@ -102,11 +102,11 @@ function scr_init_vetores(){
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 1
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Nome da habilidade"; //atack ou passiva 2
 	strings[j++] = "oq ela faz";
 	nums[i++] = 0; //custo
-	nums[i++] = 0 //dano
+	nums[i++] = 30 //dano
 	strings[j++] = "Tipo da Fraqueza dele"; //tiipo da fraqueza
 	strings[j++] = "\0"; // resistencia
 	nums[i++] = 0; //custo pra trocar
@@ -150,7 +150,7 @@ function scr_init_vetores(){
 	// Energia Eletrica
 	nums[i++] = ++z; //numero da carta 9
 	strings[j++] = "Comum"; // raridade da carta
-	strings[j++] = "Energia Eletrica"; // nome
+	strings[j++] = "ELETRICITY ENERGY"; // nome
 	strings[j++] = "ENERGY"; // tipo
 	nums[i++] = 0; //hp
 	strings[j++] = ""; //atack ou passiva 1
@@ -164,5 +164,6 @@ function scr_init_vetores(){
 	strings[j++] = ""; //tiipo da fraqueza
 	strings[j++] = ""; // resistencia
 	nums[i++] = 0; //custo pra trocar
-
+	
+	return z;
 }

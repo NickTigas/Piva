@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_check_total",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_check_total",
+  "parent":{
+    "name":"Deck",
+    "path":"folders/Scripts/Deck.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_get_damage_2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_get_damage_2",
+  "parent":{
+    "name":"Get",
+    "path":"folders/Scripts/Get.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

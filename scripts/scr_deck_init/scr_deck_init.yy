@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_deck_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_deck_init",
+  "parent":{
+    "name":"Init",
+    "path":"folders/Scripts/Init.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_get_hp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_get_hp",
+  "parent":{
+    "name":"Get",
+    "path":"folders/Scripts/Get.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
