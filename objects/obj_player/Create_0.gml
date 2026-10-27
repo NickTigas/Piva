@@ -81,4 +81,4 @@ discard_x = deck_x;
 discard_y = deck_y-card_height-10;
 discard_x_2 = discard_x;
 
-instance_create_layer(0,0,"Instances",obj_oponente); // remove quando o codiguim do cliente estiver feito
+//instance_create_layer(0,0,"Instances",obj_oponente); // remove quando o codiguim do cliente estiver feito

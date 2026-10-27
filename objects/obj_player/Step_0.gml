@@ -1,3 +1,7 @@
+if(!instance_exists(obj_oponente)){ // se não existir obj_oponente
+	return 1;
+}
+
 if(start_game_turno == true)
 {
 	if(alarm[0] == -1){

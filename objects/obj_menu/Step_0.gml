@@ -23,9 +23,12 @@ if(mouse_x >= 110 && mouse_x <= 177){
 
 
 if(mouse_check_button_released(mb_left)){
-	if(opc == 1 /*&& ini_section_exists("deck")*/){ 
-	//ini_close();
-	room_goto(2);
+	if(opc == 1 && !instance_exists(obj_client) /*&& ini_section_exists("deck")*/){ 
+	instance_create_layer(0,0,"Instances", obj_client);
+	if(obj_client.connect >=0){
+		//ini_close();
+		room_goto(2);
+		}
 	}
 	else if(opc == 2){room_goto(1);}
 }

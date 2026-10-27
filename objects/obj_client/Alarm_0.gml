@@ -1,0 +1,1 @@
+instance_destroy(); // destroi o obj client

@@ -1,0 +1,4 @@
+Patch Notes 7.0 / 1.7
+
+- Foi implementado a conexão entre player numa mesma máquina
+- Foi implementado a conexão com o servidor passando os buffers de entrada, saida, cartas na mao e no deck

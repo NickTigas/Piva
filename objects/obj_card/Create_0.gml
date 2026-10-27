@@ -5,7 +5,7 @@ scr_init_vetores();
 card_drawn = false;
 card_in_hand = false;
 
-player = obj_player;
+player = instance_find(obj_player,0);
 cardNum = 0;
 hand_posicao = 0;
 x_pos = 0
