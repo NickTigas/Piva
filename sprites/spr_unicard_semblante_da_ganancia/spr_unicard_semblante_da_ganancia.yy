@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"8d5a8d27-100a-41af-ad8f-a49ade1e8ab6","name":"8d5a8d27-100a-41af-ad8f-a49ade1e8ab6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"248cd735-0e65-4033-8127-19037076cd74","name":"248cd735-0e65-4033-8127-19037076cd74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":100,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7784d420-bcd9-4b73-ae77-1f440bc5a225","blendMode":0,"displayName":"default","isLocked":false,"name":"7784d420-bcd9-4b73-ae77-1f440bc5a225","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9ce3f1e6-5246-48e5-87b1-94ed48567fa0","blendMode":0,"displayName":"default","isLocked":false,"name":"9ce3f1e6-5246-48e5-87b1-94ed48567fa0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_unicard_semblante_da_ganancia",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8d5a8d27-100a-41af-ad8f-a49ade1e8ab6","path":"sprites/spr_unicard_semblante_da_ganancia/spr_unicard_semblante_da_ganancia.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"36d7d81a-530a-4a72-b60f-c84ee4244c3c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"248cd735-0e65-4033-8127-19037076cd74","path":"sprites/spr_unicard_semblante_da_ganancia/spr_unicard_semblante_da_ganancia.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"89c686a6-3e61-4f97-8db9-b612aaf17d6f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
