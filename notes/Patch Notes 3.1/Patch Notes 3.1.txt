@@ -1,0 +1,8 @@
+Patch Notes 3.1 / 1.0
+
+- Paramos de usar Font e agora só usamos note
+- Adicionado a função de cálculo de damage count junto com a monstragem física
+- Foi arrumado a interação de assosiação de dados das cartas aos objetos delas in-game
+- "Foi arrumado a interação da ferramenta de observação de informação de cada carta"
+
+
