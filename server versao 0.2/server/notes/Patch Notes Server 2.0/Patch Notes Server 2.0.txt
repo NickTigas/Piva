@@ -1,0 +1,5 @@
+Patch Notes Server 2.0
+
+- Load Screen
+- Implementado funções para passar paramentros como cartas no campo, pilha de discarte, equipamento de cartas
+de energia e de itens, dano infligido e recebido
