@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"deck_draw_path",
+  "closed":false,
+  "kind":0,
+  "name":"deck_draw_path",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":626.0,"y":640.0,},
+    {"speed":100.0,"x":352.0,"y":928.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
